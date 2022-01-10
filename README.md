@@ -22,7 +22,11 @@ show_list
 Books Marks 
 
 
-
+| Objects | Messages |
+| ----------- | ----------- |
+| User | draw |
+| List of Bookmarks | show_list |
+| Bookmark |  |
 
 
  
