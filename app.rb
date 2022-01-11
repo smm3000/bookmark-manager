@@ -8,12 +8,12 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/' do
-    redirect '/bookmarks'
+    'Welcome to Bookmark Manager!'
   end 
 
   get '/bookmarks' do
-    # render erb view using the model 
-    erb:index
+    @bookmarks = Bookmark.all
+    erb :index
   end 
 
   run! if app_file == $0
