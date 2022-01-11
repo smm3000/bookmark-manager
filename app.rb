@@ -7,6 +7,10 @@ class BookmarkManager < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  get '/' do
+    redirect '/bookmarks'
+  end 
+
   get '/bookmarks' do
     # render erb view using the model 
     erb:index
